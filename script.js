@@ -20,7 +20,7 @@ function compute() {
 	var yearOfWithdrawal = parseInt(today.getFullYear())+parseInt(years);
 
 	document.getElementById("depositmessage").innerHTML = ""+principal;
-	document.getElementById("interestmessage").innerHTML = ""+rate;
+	document.getElementById("interestmessage").innerHTML = ""+rate+"%";
 	document.getElementById("amountmessage").innerHTML = ""+interest;
 	document.getElementById("yearmessage").innerHTML = ""+yearOfWithdrawal;
 	showMessage();
@@ -31,4 +31,4 @@ function compute() {
 function showRange() {
 	var rate = document.getElementById("rate").value;
 	document.getElementById("ratevalue").innerHTML = rate;
-}     
+}
